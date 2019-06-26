@@ -27,4 +27,9 @@ class Api::ParamsExamplesController < ApplicationController
     end
     render "query_guess.json.jb"
   end
+
+  def segment_params_method
+    @output_message = params["the_variable_part"]
+    render "segment_params.json.jb"
+  end
 end
