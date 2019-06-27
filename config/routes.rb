@@ -8,5 +8,6 @@ Rails.application.routes.draw do
     get "/segment_guess_url/:the_users_guess" => "params_examples#query_guess_method"
 
     post "/body_params_url" => "params_examples#body_params_method"
+    post "/body_guess_url" => "params_examples#query_guess_method"
   end
 end
