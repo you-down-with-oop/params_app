@@ -37,4 +37,13 @@ class Api::ParamsExamplesController < ApplicationController
     @output_message = "Shh...the secret message is #{params["secret_stuff"]}"
     render "body_params.json.jb"
   end
+
+  def body_password_method
+    if params["username"] == "hugh" && params["password"] == "swordfish"
+      @output_message = "Valid"
+    else
+      @output_message = "Invalid"
+    end
+    render "body_params.json.jb"
+  end
 end

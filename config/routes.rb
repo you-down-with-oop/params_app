@@ -9,5 +9,6 @@ Rails.application.routes.draw do
 
     post "/body_params_url" => "params_examples#body_params_method"
     post "/body_guess_url" => "params_examples#query_guess_method"
+    post "/body_password_url" => "params_examples#body_password_method"
   end
 end
