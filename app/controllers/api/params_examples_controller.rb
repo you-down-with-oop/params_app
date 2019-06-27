@@ -32,4 +32,9 @@ class Api::ParamsExamplesController < ApplicationController
     @output_message = params["the_variable_part"]
     render "segment_params.json.jb"
   end
+
+  def body_params_method
+    @output_message = "Shh...the secret message is #{params["secret_stuff"]}"
+    render "body_params.json.jb"
+  end
 end
